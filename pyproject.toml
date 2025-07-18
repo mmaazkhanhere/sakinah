@@ -1,0 +1,14 @@
+[project]
+name = "sakinah"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "colorama>=0.4.6",
+    "langchain>=0.3.26",
+    "langchain-community>=0.3.27",
+    "langchain-google-genai>=2.1.8",
+    "langchain-openai>=0.3.28",
+    "pandas>=2.3.1",
+]

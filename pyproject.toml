@@ -10,5 +10,8 @@ dependencies = [
     "langchain-community>=0.3.27",
     "langchain-google-genai>=2.1.8",
     "langchain-openai>=0.3.28",
+    "langchain-pinecone>=0.2.9",
     "pandas>=2.3.1",
+    "pinecone>=7.3.0",
+    "python-dotenv>=1.1.1",
 ]

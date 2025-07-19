@@ -1,7 +1,8 @@
 import logging
-from colorama import Fore, Style, init
+from colorama import Fore, Style
 
 from create_ayah_chunks import create_ayah_chunks
+from embed_and_store import embed_and_store
 
 logging.basicConfig(
     level=logging.INFO,
@@ -12,6 +13,8 @@ logger = logging.getLogger(__name__)
 data_path = "data/quran.csv"
 
 chunks = create_ayah_chunks(data_path)
+
+stats = embed_and_store(chunks, "sakinah-app")
 
 logger.info(f"{Fore.GREEN}First chunk: {chunks[0]}{Style.RESET_ALL}")
 logger.info(f"{Fore.GREEN}Second chunk: {chunks[1]}{Style.RESET_ALL}")
